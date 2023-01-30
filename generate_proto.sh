@@ -1,0 +1,1 @@
+protoc -I . --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` mathtest.proto && protoc --cpp_out=. mathtest.proto
